@@ -9,12 +9,7 @@ public class SeleniumIntroduction {
 
 // Chrome launch
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Abraham\\Documents\\Danthek\\Automated QA Tools\\Browser Drivers\\chromedriver.exe"); // sets
-																													// the
-																													// chrome
-																													// driver
-																													// globally
-
+				"C:\\Users\\Abraham\\Documents\\Danthek\\Automated QA Tools\\Browser Drivers\\chromedriver.exe"); // sets the chrome driver
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://rahulshettyacademy.com//");
@@ -52,8 +47,8 @@ public class SeleniumIntroduction {
 		System.out.println(driver2.getTitle());
 
 		System.out.println(driver2.getCurrentUrl()); // gets URL
-		//String p = driver3.getPageSource(); //gets page source
-	    //System.out.println("Page Source is : " + p);
+		// String p = driver3.getPageSource(); //gets page source
+		// System.out.println("Page Source is : " + p);
 
 		driver2.close();
 
