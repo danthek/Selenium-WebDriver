@@ -47,8 +47,8 @@ public class CoreJavaBrushUp2 {
 		for (i = 0; i < 15; i++) {
 			ages.add(i);
 		}
-
 		System.out.println("The ages in the array are: " + i);
+		
 		for (int y = 0; y < i; y++) {
 			System.out.println(ages.get(y));
 		}

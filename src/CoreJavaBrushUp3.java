@@ -19,7 +19,7 @@ public class CoreJavaBrushUp3 {
 
 		System.out.println("----------Print character by character------------");
 		String salute6 = "Hello My Beautiful World";
-		for (int i=0; i< salute6.length(); i++) { // look how length() has a parentesis here
+		for (int i=0; i< salute6.length(); i++) { // look how length() has a parenthesis here
 			System.out.println(salute6.charAt(i)); // trim() removes blank spaces
 		}
 		
@@ -30,7 +30,7 @@ public class CoreJavaBrushUp3 {
 			System.out.println(splittedString[i]);
 		}
 		System.out.println("----------Split by a word of the sentence---------------");
-		String[] splittedString2 = salute6.split("My"); // we split it by the blank space
+		String[] splittedString2 = salute6.split("My"); // we split it by indicated word
 		
 		for (int i=0; i< splittedString2.length; i++) {
 			System.out.println(splittedString2[i].trim()); // trim() removes blank spaces
