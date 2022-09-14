@@ -2,6 +2,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
 public class Locators2 {
@@ -10,8 +11,13 @@ public class Locators2 {
 		String name =  "rahul";
 		Locators2 methods= new Locators2();
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Abraham\\Documents\\Danthek\\Automated QA Tools\\Browser Drivers\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Abraham\\Documents\\Danthek\\Automated QA Tools\\Browser Drivers\\chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Abraham\\Documents\\Danthek\\Automated QA Tools\\Browser Drivers\\geckodriver.exe");
+
+		WebDriver driver = new FirefoxDriver();
+
 		///////////////// SIGN IN WITH CORRECT CREDS ///////////////////
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));// wait for something to shoe... It is usually used when you are sure the element may be visible in a certain time, 	It is applicable to only a certain element which is specific to a certain condition.
 		String dynamicPassword = methods.getPass(driver); // if the methods is declared as static then we wouldn't need the "methods."
