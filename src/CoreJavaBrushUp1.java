@@ -6,6 +6,7 @@ public class CoreJavaBrushUp1 {
 		// Variables
 		int myNum = 5; // number
 		String myName = "Abraham"; // strings
+		String changingVariable =""; // strings
 		char letter = 'r'; // characters
 		float dec = (float) 5.99; // decimals
 		double decim = 7.99; // decimals
@@ -43,6 +44,13 @@ public class CoreJavaBrushUp1 {
 			System.out.println("Enhanced loop form: " + keyWord);
 		}
 
+		changingVariable="Name1";
+		System.out.println(changingVariable);
+		changingVariable="Name2";
+		System.out.println(changingVariable);
+		changingVariable="Name3";
+		System.out.println(changingVariable);
+		
 	}
 
 }
